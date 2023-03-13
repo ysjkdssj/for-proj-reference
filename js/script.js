@@ -5,11 +5,13 @@ searchEl.addEventListener('click', function () {
     searchInputEl.focus();
 });
 
+
 searchInputEl.addEventListener('focus', function (){
     searchEl.classList.add('focused');
     searchInputEl.setAttribute('placeholder', '통합검색');
 });
 
+// 헤더 검색창에 마우스 클릭시 늘어나는 창에 글씨 숨기는 js
 searchInputEl.addEventListener('blur', function (){
     searchEl.classList.remove('focused');
     searchInputEl.setAttribute('placeholder', '');

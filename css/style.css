@@ -16,13 +16,13 @@ a{
 }
 /* 헤더 */
 header {
-    background-color: royalblue;
+    background-color: #f6f5f0;
+    border-bottom: 1px solid #c8c8c8;
 }
 header .inner {
     width: 1100px;
     height: 120px;
     margin: 0 auto;
-    background-color: orange;;
     position: relative;
 }
 header .logo {
@@ -32,13 +32,16 @@ header .logo {
     bottom: 0;
     left: 0;
     margin: auto;
-    display: none;
+    /* display: none; */
 }
 #logo-size {
     width: 100px;
     height: 100px;
 }
 header .sub-menu {
+    position: absolute;
+    top: 10px;
+    right: 0;
     display: flex;
 }
 header .sub-menu ul.menu {
@@ -101,4 +104,8 @@ header .sub-menu .search .material-icons {
     bottom: 0;
     right: 5px;
     margin: auto;
+    transition: .4s;
+}
+header .sub-menu .search.focused .material-icons {
+    opacity: 0;
 }
