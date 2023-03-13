@@ -39,7 +39,7 @@ header .logo {
     height: 100px;
 }
 header .sub-menu {
-
+    display: flex;
 }
 header .sub-menu ul.menu {
     font-family: Arial, sans-serif;
@@ -74,7 +74,6 @@ header .sub-menu ul.menu li a:hover {
     color: #000;
 }
 header .sub-menu .search {
-    background-color: red;
     height: 34px;
     position: relative;
 }
@@ -100,5 +99,6 @@ header .sub-menu .search .material-icons {
     position: absolute;
     top: 0;
     bottom: 0;
+    right: 5px;
     margin: auto;
 }
